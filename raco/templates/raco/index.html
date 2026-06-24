@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title></title>  
+
 </head>
-<body> <title><img src= "./img/raco.png"></title>
 
   <style>
     *{
@@ -14,11 +15,14 @@
       box-sizing:border-box;
       font-family:Arial, Helvetica, sans-serif;
     }
-       
+    /* img{img src= "./img/raco.png">
+</title> */
+
+    
     /* # O menu do topo do site */
 
     body{
-      background:#fff;
+      background:#ffffff;
     }
 
     /* HEADER */
@@ -33,10 +37,16 @@
       border-bottom:1px solid #ddd;
     }
 
-    .logo{
-      font-size:32px;
-      font-weight:bold;
-    }
+    .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    height: 50px; 
+    width: auto;
+}
 
     nav{
       display:flex;
@@ -54,17 +64,18 @@
       color:#8e44ad;
     }
 
+    nav img{ 
+      height: 50px;
+    }
+
     .button  {
-    .btn{
     padding:12px 24px;
     background:#fff;
     border:none;      
     outline:none;    
     box-shadow:none;   
 }
-    }
 
-   
 
     /* HERO */
     .hero{
@@ -180,11 +191,13 @@
   <!-- HEADER -->
   <header>
     
-    <img src="raco.png">
+    <!-- <img src="raco.png"> -->
 
 
 
     <nav>
+     <nav class="menu"> 
+    <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
       <a href="#">Nossa loja</a>
       <a href="#">Kits festa</a>
       <a href="#">Convites</a>
