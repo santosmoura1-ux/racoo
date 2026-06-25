@@ -4,32 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kits</title>
-    <link rel="stylesheet" href="{% static 'raco/css/style.css' %}">
+    <title> Nossos Kits </title>
+    <link rel="stylesheet" href="{% static 'img/raco.png' %}">
+
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      /* img{img src= "./img/raco.png">
+  </title> */
+  
+      
+      /* # O menu do topo do site */
+  
+      body{
+        background:#ffffff;
+      }
+  
+      /* HEADER */
+      header{
+        width:100%;
+        height:90px;
+        background:white;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:0 60px;
+        border-bottom:1px solid #ddd;
+      }
+  
+      .menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+  }
+  
+  .logo {
+      height: 50px; 
+      width: auto;
+  }
+  
+      nav{
+        display:flex;
+        gap:40px;
+      }
+  
+      nav a{
+        text-decoration:none;
+        color:#333;
+        font-size:18px;
+        transition:0.3s;
+      }
+  
+      nav a:hover{
+        color:#8e44ad;
+      }
+  
+      nav img{ 
+        height: 50px;
+      }
+  
+      .button  {
+      padding:12px 24px;
+      background:#fff;
+      border:none;      
+      outline:none;    
+      box-shadow:none;   
+  }
+  
+  
+      /* HERO */
+      .hero{
+        width:100%;
+        height:650px;
+        background-image:url(fundo.png);
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+  
+      .overlay{
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.35);
+      }
+  
+      .hero-content{
+        position:relative;
+        z-index:2;
+        text-align:center;
+        color:white;
+        width:80%;
+      }
+  
+      .hero-content h1{
+        font-size:60px;
+        font-weight:300;
+        margin-bottom:40px;
+      }
+  
+      /* SEARCH BOX */
+      .search-box{
+        width:100%;
+        max-width:1000px;
+        margin:auto;
+        display:flex;
+        background:white;
+        border-radius:12px;
+        overflow:hidden;
+        border:3px solid rgba(255,255,255,0.6);
+      }
+  
+      .search-box input{
+        flex:1;
+        padding:22px;
+        border:none;
+        outline:none;
+        font-size:18px;
+      }
+  
+      .search-box button{
+        width:90px;
+        color:black;
+        font-size:24px;
+        cursor:pointer;
+      }
+  
+      /* INFO BAR */
+      .info-bar{
+        width:100%;
+        background:#7d2fa5;
+        color:white;
+        display:flex;
+        justify-content:center;
+        gap:60px;
+        padding:18px;
+        font-size:15px;
+      }
+  
+      /* CATEGORIES */
+      .categories{
+        padding:80px 10%;
+      }
+  
+      .categories h2{
+        font-size:42px;
+        margin-bottom:40px;
+        color:#333;
+      }
+  
+      .cards{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+        gap:25px;
+      }
+  
+      .card{
+        background:#f5f5f5;
+        border-radius:18px;
+        overflow:hidden;
+        transition:0.3s;
+      }
+  
+  
+      .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+      }
+  
+      .card h3{
+        padding:20px;
+        text-align:center;
+        color:#333;
+      }
+    </style>
 
 </head>
 <body>
-   <h1>Kits</h1>
+   <h1><img src="{% static 'img/raco.png' %}"></h1>
 <p></p>
  <section class="categories">
 
     <h2>Nossos Kits</h2>
 
-    <div class="cards">
-      <h1><img src="{% static 'raco\static\img\raco.png' %}"></h1>
-      <div class="card">
-        <img src="raco/static/img/abe.png">
-        <h3>Kits Festa</h3>
+        <div class=".card h3">
+        <img src="{% static 'img/abe.png' %}">
+        <h3>Decoração de festa tema Abelhas e Mel</h3>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop">
-        <h3>Convites</h3>
+        <div class=".card h3">
+        <img src="{% static 'img/dino.png' %}">
+        <h3>Decoração de festa tema Dinossauros</h3>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2070&auto=format&fit=crop">
-        <h3>Lembrancinhas</h3>
+        <div class=".card h3">
+        <img src="{% static 'img/bos.png' %}">
+        <h3>Decoração de festa tema Bosque Encantado</h3>
       </div>
 
 </body>

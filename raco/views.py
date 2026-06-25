@@ -14,4 +14,28 @@ def kit(request):
      return render (request, 'raco/kit.html')
  
 
+def index(request):
 
+    itens = [
+        {
+            "id": 1,
+            "imagem":  'img/urso.png' ,
+            "descricao": "Descrição do item 1",
+        },
+        {
+            "id": 2,
+            "imagem": 'img/conv.png',
+            "descricao": "Descrição do item 2",
+        },
+        {
+            "id": 3,
+            "imagem": 'img/ravio.png',
+            "descricao": "Descrição do item 3",
+        },
+    ]
+
+    context = {
+        "itens": itens,
+    }
+
+    return render(request, "raco/index.html", context)
