@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\20261016270026\raco_9\racoo\venv
+=======
+set VIRTUAL_ENV=C:\Users\20261016270079\Desktop\Project.Racogit\racoo\venv
+>>>>>>> a984dd981d2f44406e23a5f7030765acdbd58ed8
 
 if not defined PROMPT set PROMPT=$P$G
 

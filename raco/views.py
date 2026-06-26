@@ -25,7 +25,7 @@ def index(request):
         {
             "id": 2,
             "imagem": 'img/conv.png',
-            "descricao": "Descrição do item 2",
+            "descricao": "convites",
         },
         {
             "id": 3,
