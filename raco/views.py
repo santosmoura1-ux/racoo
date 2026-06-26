@@ -30,7 +30,7 @@ def index(request):
         {
             "id": 3,
             "imagem": 'img/ravio.png',
-            "descricao": "Descrição do item 3",
+            "descricao": "Lembrancinhas",
         },
     ]
 
