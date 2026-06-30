@@ -12,7 +12,12 @@ def sobre(request):
 
 def kit(request):
      return render (request, 'raco/kit.html')
- 
+
+def convite(request):
+     return render (request,'raco/convite.html')
+
+def lembranca(request):
+     return render (request,'raco/lembranca.html')
 
 def index(request):
 
