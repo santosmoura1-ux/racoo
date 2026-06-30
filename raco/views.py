@@ -20,17 +20,17 @@ def index(request):
         {
             "id": 1,
             "imagem":  'img/urso.png' ,
-            "descricao": "Kit Festa",
+            "descricao": "Kit Festa 🎈",
         },
         {
             "id": 2,
             "imagem": 'img/conv.png',
-            "descricao": "Convites",
+            "descricao": "Convites ✉️",
         },
         {
             "id": 3,
             "imagem": 'img/ravio.png',
-            "descricao": "Lembrancinhas",
+            "descricao": "Lembrancinhas 🎁",
         },
     ]
 
