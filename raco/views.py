@@ -7,8 +7,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'raco/index.html')
 
-def categoria(request):
-     return render (request, 'raco/categoria.html')
+def sobre(request):
+     return render (request, 'raco/sobre.html')
 
 def kit(request):
      return render (request, 'raco/kit.html')
@@ -20,12 +20,12 @@ def index(request):
         {
             "id": 1,
             "imagem":  'img/urso.png' ,
-            "descricao": "Descrição do item 1",
+            "descricao": "Kit Festa",
         },
         {
             "id": 2,
             "imagem": 'img/conv.png',
-            "descricao": "convites",
+            "descricao": "Convites",
         },
         {
             "id": 3,

@@ -1,0 +1,180 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nós</title>
+  <style>
+    /* HEADER */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    nav a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #8e44ad;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      background: #fff;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    /* fundo roxo  */
+    .sobre {
+      clear: both;
+      width: 100%;
+      background-color: #5F4B6B;
+      color: white;
+      padding: 50px 20px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      margin-top: 30px;
+    }
+
+    .caixa-texto,
+    .caixa-foto {
+      flex: 1;
+    }
+
+    .subtitulo {
+      color: #d1c7bd;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .titulo {
+      font-size: 32px;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .paragrafo {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .caixa-foto img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="menu">
+      <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
+      <a href="#">Nossa loja</a>
+      <a href="#">Kits festa</a>
+      <a href="#">Convites</a>
+      <a href="#">Caixas e embalagens</a>
+      <a href="#">Sobre Nós</a>
+    </nav>
+
+    <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
+      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
+        style="width: 16px; height: 16px; vertical-align: middle;">
+      MINHA CONTA
+    </button>
+  </header>
+
+  <section class="sobre">
+
+    <div class="caixa-texto">
+      <p class="subtitulo">NOSSO FUNDADOR</p>
+      <h2 class="titulo">Quem é Ravi Costa?</h2>
+
+      <p class="paragrafo">
+        Ravi é um adolescente de 17 anos, morador da comunidade quilombola de Capoeiras, em Macaíba-RN, com espírito
+        empreendedor e interesse em transformar seu talento artesanal em um negócio.
+      </p>
+
+      <p class="paragrafo">
+        A Raco nasceu da vontade de levar a arte e a cultura local para celebrações em todo o Brasil. O que começou como
+        um hobby transformou-se em uma missão: criar peças que não apenas decoram festas, mas que carregam consigo a
+        identidade e o afeto de quem as produz.
+      </p>
+
+
+      <p class="paragrafo">
+        Cada kit festa que sai de nossa oficina é revisado pessoalmente por Ravi, garantindo que o padrão de qualidade
+        artesanal que define a nossa marca seja mantido em cada centímetro de papel.
+      </p>
+
+      <hr>
+
+      <p class="paragrafo"><strong>Produção 100% Artesanal</strong></p>
+      <p class="subtitulo" style="color: #ffffff; opacity: 0.8; text-transform: none;">Cuidado individual em cada
+        pedido.</p>
+    </div>
+
+    <div class="caixa-foto">
+      <img src="fotoderaviaqui" alt="Ravi Costa">
+    </div>
+
+  </section>
+
+</body>
+
+</html>

@@ -1,211 +1,216 @@
- {%load static%}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Nossos Kits </title>
-    <link rel="stylesheet" href="{% static 'img/raco.png' %}">
 
-    <style>
-      *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family:Arial, Helvetica, sans-serif;
-      }
-      /* img{img src= "./img/raco.png">
-  </title> */
-  
-      
-      /* # O menu do topo do site */
-  
-      body{
-        background:#ffffff;
-      }
-  
-      /* HEADER */
-      header{
-        width:100%;
-        height:90px;
-        background:white;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        padding:0 60px;
-        border-bottom:1px solid #ddd;
-      }
-  
-      .menu {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nossos Kits </title>
+  <link rel="stylesheet" href="{% static 'img/raco.png' %}">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* # O menu do topo do site */
+
+    body {
+      background: #ffffff;
+    }
+
+
+
+    /* Título da seção */
+    .titulo-secao {
+      color: #4A3728;
+      font-family: sans-serif;
+      font-size: 22px;
+      margin: 30px 20px 10px 20px;
+    }
+
+    /* cartões de lado um do outro*/
+    .grade-produtos {
       display: flex;
-      align-items: center;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 15px;
+      /* Diminuír o espaço entre os cartões */
+      justify-content: flex-start;
+      /* Alinhar os cartões  */
+      padding: 20px;
+      ;
+    }
+
+    /* O quadrado do cartão */
+    .produto-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      /* Sombra*/
+      width: 240px;
+      /* Largura do cartao*/
+      border: 1px solid #eee;
+      font-family: sans-serif;
+    }
+
+    /* foto do produto */
+    .produto-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      /* Corta a imagem sem deixar ela toda errada */
+    }
+
+    /* Textos dentro do cartão */
+    .produto-info {
+      padding: 15px;
+    }
+
+    .produto-info h3 {
+      font-size: 14px;
+      color: #333;
+      margin: 0 0 10px 0;
+      line-height: 1.4;
+    }
+
+    /* Preço  */
+    .preco {
+      color: #6b8e23;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 5px 0 15px 0;
+    }
+
+
+    .botao-comprar {
+      background-color: #2bb9cc;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+   /* HEADER */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
   }
-  
+
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+
   .logo {
-      height: 50px; 
-      width: auto;
+    height: 50px;
+    width: auto;
   }
-  
-      nav{
-        display:flex;
-        gap:40px;
-      }
-  
-      nav a{
-        text-decoration:none;
-        color:#333;
-        font-size:18px;
-        transition:0.3s;
-      }
-  
-      nav a:hover{
-        color:#8e44ad;
-      }
-  
-      nav img{ 
-        height: 50px;
-      }
-  
-      .button  {
-      padding:12px 24px;
-      background:#fff;
-      border:none;      
-      outline:none;    
-      box-shadow:none;   
+
+  nav {
+    display: flex;
+    gap: 40px;
   }
-  
-  
-      /* HERO */
-      .hero{
-        width:100%;
-        height:650px;
-        background-image:url(fundo.png);
-        position:relative;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-      }
-  
-      .overlay{
-        position:absolute;
-        inset:0;
-        background:rgba(0,0,0,0.35);
-      }
-  
-      .hero-content{
-        position:relative;
-        z-index:2;
-        text-align:center;
-        color:white;
-        width:80%;
-      }
-  
-      .hero-content h1{
-        font-size:60px;
-        font-weight:300;
-        margin-bottom:40px;
-      }
-  
-      /* SEARCH BOX */
-      .search-box{
-        width:100%;
-        max-width:1000px;
-        margin:auto;
-        display:flex;
-        background:white;
-        border-radius:12px;
-        overflow:hidden;
-        border:3px solid rgba(255,255,255,0.6);
-      }
-  
-      .search-box input{
-        flex:1;
-        padding:22px;
-        border:none;
-        outline:none;
-        font-size:18px;
-      }
-  
-      .search-box button{
-        width:90px;
-        color:black;
-        font-size:24px;
-        cursor:pointer;
-      }
-  
-      /* INFO BAR */
-      .info-bar{
-        width:100%;
-        background:#7d2fa5;
-        color:white;
-        display:flex;
-        justify-content:center;
-        gap:60px;
-        padding:18px;
-        font-size:15px;
-      }
-  
-      /* CATEGORIES */
-      .categories{
-        padding:80px 10%;
-      }
-  
-      .categories h2{
-        font-size:42px;
-        margin-bottom:40px;
-        color:#333;
-      }
-  
-      .cards{
-        display:grid;
-        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-        gap:25px;
-      }
-  
-      .card{
-        background:#f5f5f5;
-        border-radius:18px;
-        overflow:hidden;
-        transition:0.3s;
-      }
-  
-  
-      .card img{
-        width:100%;
-        height:220px;
-        object-fit:cover;
-      }
-  
-      .card h3{
-        padding:20px;
-        text-align:center;
-        color:#333;
-      }
-    </style>
+
+  nav a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #8e44ad;
+  }
+
+  nav img {
+    height: 50px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  </style>
 
 </head>
-<body>
-   <h1><img src="{% static 'img/raco.png' %}"></h1>
-<p></p>
- <section class="categories">
 
-    <h2>Nossos Kits</h2>
+<header>
 
-        <div class=".card h3">
-        <img src="{% static 'img/abe.png' %}">
-        <h3>Decoração de festa tema Abelhas e Mel</h3>
-      </div>
 
-        <div class=".card h3">
-        <img src="{% static 'img/dino.png' %}">
-        <h3>Decoração de festa tema Dinossauros</h3>
-      </div>
 
-        <div class=".card h3">
-        <img src="{% static 'img/bos.png' %}">
-        <h3>Decoração de festa tema Bosque Encantado</h3>
-      </div>
+  <nav>
+    <nav class="menu">
+      <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
+      <a href="#">Nossa loja</a>
+      <a href="#">Kits festa</a>
+      <a href="#">Convites</a>
+      <a href="#">Caixas e embalagens</a>
+      <a href="#">Sobre Nós</a>
+    </nav>
 
+    <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
+      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
+        style="width: 16px; height: 16px; vertical-align: middle;">
+      MINHA CONTA
+    </button>
+
+</header>
+
+<h2 class="titulo-secao">Kits festa infantil personalizados: Os Temas mais procurados</h2>
+
+<div class="grade-produtos">
+
+  <div class="produto-card">
+    <img src="{% static 'img/abe.png' %}">
+    <div class="produto-info">
+      <h3>Decoração de festa tema Abelhas e Mel</h3>
+      <p class="preco">R$ 140,00</p>
+      <button class="botao-comprar">COMPRAR</button>
+    </div>
+  </div>
+  <div class="produto-card">
+    <img src="{% static 'img/dino.png' %}">
+    <div class="produto-info">
+      <h3>Decoração de festa tema Dinossauros</h3>
+      <p class="preco">R$ 140,00</p>
+      <button class="botao-comprar">COMPRAR</button>
+    </div>
+  </div>
+  <div class="produto-card">
+    <img src="{% static 'img/bos.png' %}">
+    <div class="produto-info">
+      <h3>Decoração de festa tema Bosque Encantado</h3>
+      <p class="preco">R$ 140,00</p>
+      <button class="botao-comprar">COMPRAR</button>
+    </div>
+  </div>
+  <div class="produto-card">
+    <img src="{% static 'img/flo.png' %}">
+    <div class="produto-info">
+      <h3>Decoração de festa tema Flores</h3>
+      <p class="preco">R$ 140,00</p>
+      <button class="botao-comprar">COMPRAR</button>
+    </div>
+  </div>
+</div>
 </body>
+
 </html>
