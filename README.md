@@ -1,6 +1,6 @@
 # Projeto Django — RACO
 
-**Integrantes:Mariana Santos , Marcia Silva, Sabrina Karine , Nythalya Catherine , Bianca Martins**
+**Integrantes:Mariana Santos , Marcia Silva, Sabrina Karine , Nathalya Catherine , Bianca Martins**
 
 ## Como rodar
 1. Instale as dependências: `pip install django`
