@@ -197,6 +197,26 @@
     text-align: center;
     color: #333;
   }
+
+  .at {
+    background-color: #2bb9cc;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .btnw {
+
+    display: inline-block;
+    background-color: #3b2306;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 </style>
 </head>
 
@@ -210,16 +230,17 @@
       <nav class="menu">
         <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
         <a href="#">Nossa loja</a>
-        <a href="#">Kits festa</a>
+        <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
         <a href="#">Convites</a>
         <a href="#">Caixas e embalagens</a>
         <a href="#">Sobre Nós</a>
       </nav>
 
       <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
-    <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola" style="width: 16px; height: 16px; vertical-align: middle;">
-    MINHA CONTA
-</button>
+        <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
+          style="width: 16px; height: 16px; vertical-align: middle;">
+        MINHA CONTA
+      </button>
 
   </header>
 
@@ -243,19 +264,25 @@
   <!-- CATEGORIES -->
 
   <section class="categories">
-
     <h2>Nossas categorias</h2>
 
     <div class="cards">
       {% for item in itens %}
       <div class="card">
 
-        <img src="{% static item.imagem %}">
+<img src="{% static item.imagem %}">
         <p>{{ item.descricao }}</p>
 
       </div>
 
       {% endfor %}
+    </div>
+    <div class="at">
+      <h3>Atendimento personalizado</h3>
+      <p>Fale com nossa equipe no WhatsApp e receba um orçamento personalizado, sem compromisso.</p>
+      <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="btnw">
+        FALAR NO WHATSAPP
+      </a>
     </div>
 
   </section>
