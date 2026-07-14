@@ -18,14 +18,14 @@
   }
 
   /* HEADER */
-  header {
-    width: 100%;
+  .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-  }
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
 
   .menu {
     display: flex;
@@ -211,7 +211,7 @@
   }
 </style>
 
-<head> 
+<head>
   <link rel="stylesheet" href=".racoo/raco/css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -227,20 +227,20 @@
   <header>
 
 
+ <header class="main-header">
+        <div class="logo">
+            <img src="{% static 'img/raco.png' %}" alt="RACO" >
+        </div>
+        <nav class="nav-links">
+            <a href="#">Nossa loja</a>
+            <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
+            <a href="#">Convites</a>
+            <a href="#">Caixas e embalagens</a>
+            <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
+        </nav>
+       
 
-    <nav>
-      <nav class="menu">
-        <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
-        <a href="#">Nossa loja</a>
-        <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
-        <a href="#">Convites</a>
-        <a href="#">Caixas e embalagens</a>
-        <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
-      </nav>
-
-      <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
-        <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
-          style="width: 16px; height: 16px; vertical-align: middle;">
+      <button class="btnw" style="display: inline-flex; align-items: center; gap: 6px;">
         MINHA CONTA
       </button>
 
@@ -272,10 +272,11 @@
       {% for item in itens %}
       <div class="card">
 
-<img src="{% static item.imagem %}">
+        <img src="{% static item.imagem %}">
         <p>{{ item.descricao }}</p>
 
       </div>
+
 
       {% endfor %}
     </div>

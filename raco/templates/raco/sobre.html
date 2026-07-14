@@ -9,167 +9,330 @@
   <title>Sobre nós</title>
   <style>
     /* HEADER  primeira parte de cima do site*/
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+   /* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    header {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background-color: #f2F0EF;
-    }
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
 
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
+/* HEADER */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
 
-    .logo {
-      height: 50px;
-      width: auto;
-    }
+.logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-    nav {
-      display: flex;
-      gap: 40px;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
 
-    nav a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-    nav a:hover {
-      color: #8e44ad;
-    }
+.cart-icon {
+    color: #333;
+    font-size: 18px;
+}
 
-    nav img {
-      height: 50px;
-    }
+.btn-account {
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
 
-    .button {
-      padding: 12px 24px;
-      background: #fff;
-      border: none;
-      outline: none;
-      box-shadow: none;
-    }
+.btn-account:hover {
+    background-color: #333;
+    color: #fff;
+}
 
-    /* fundo roxo  */
-    .sobre {
-      clear: both;
-      width: 100%;
-      background-color: #5F4B6B;
-      color: rgb(255, 255, 255);
-      padding: 50px 20px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      font-family: sans-serif;
-      box-sizing: border-box;
-      margin-top: 30px;
-    }
+/* SEÇÃO FUNDADOR */
+.founder-section {
+    background: linear-gradient(to right, #6d4c7d 60%, #57aeba 60%);
+    color: #fff;
+    padding: 80px 50px;
+}
 
-    .caixa-texto,
-    .caixa-foto {
-      flex: 1;
-    }
+.founder-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
 
-    .subtitulo {
-      color: #d1c7bd;
-      letter-spacing: 2px;
-      font-size: 14px;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-    }
+.founder-text {
+    flex: 1;
+}
 
-    .titulo {
-      font-size: 32px;
-      color: white;
-      margin-top: 0;
-      margin-bottom: 15px;
-    }
+.founder-text .subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 10px;
+}
 
-    .paragrafo {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 15px;
-      color: white;
-    }
+.founder-text h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
 
-    .caixa-foto img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 30px;
-      display: block;
-      margin: 0 auto;
-    }
+.founder-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
 
-    /* embiaxo */
-    .raizes {
-      padding: 80px 8%;
-      text-align: center;
-    }
+.badge-craft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    margin-top: 30px;
+}
 
-    .center {
-      font-size: 12px;
-      letter-spacing: 2px;
-      color: #888;
-      display: block;
-      margin-bottom: 10px;
-    }
+.badge-icon {
+    font-size: 20px;
+}
 
-    .communidade2 {
-      font-size: 28px;
-      color: #222;
-      margin-bottom: 15px;
-    }
+.founder-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
-    .communidade3 {
-      max-width: 600px;
-      margin: 0 auto 40px auto;
-      color: #666;
-      font-size: 15px;
-    }
-    .raizes {
-      padding: 80px;
-      text-align: center;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns:repeat(3,1fr);
-      gap: 30px;
-      margin-top: 40px;
+.founder-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
 
+/* SEÇÃO RAÍZES */
+.roots-section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.subtitle-centered {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.roots-section h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.roots-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fbf6ee;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.card-icon {
+    background-color: #57aeba;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* RODAPÉ */
+.main-footer {
+    background-color: #ffffff;
+    padding: 60px 50px 30px 50px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    flex: 2;
+    max-width: 600px;
+}
+
+.security-text {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.security-desc {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.footer-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    min-width: 200px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
     }
-    .card {
-      background: #f4e7c8;
-      padding: 30px;
-      border-radius: 10px;
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
-    h3 {
-      color: black;
+    .founder-section {
+        background: #6d4c7d;
+        padding: 40px 20px;
     }
-    p{
-      color: black;
+    .founder-container {
+        flex-direction: column-reverse;
+        text-align: center;
     }
-    .footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 50px 80px;
-      background: #fff;
+    .badge-craft {
+        margin: 30px auto 0 auto;
     }
+    .roots-section {
+        padding: 40px 20px;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-links {
+        align-items: flex-start;
+    }
+}
+
   </style>
 
   </style>
@@ -177,110 +340,122 @@
 
 <body>
 
-  <header>
-    <nav class="menu">
-      <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
-      <a href="#">Nossa loja</a>
-      <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
-      <a href="#">Convites</a>
-      <a href="#">Caixas e embalagens</a>
-      <a href="">Sobre Nós</a>
-    </nav>
-
-    <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
-      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
-        style="width: 16px; height: 16px; vertical-align: middle;">
-      MINHA CONTA
-    </button>
-  </header>
-
-  <section class="sobre">
-
-    <div class="caixa-texto">
-      <p class="subtitulo">NOSSO FUNDADOR</p>
-      <h2 class="titulo">Quem é Ravi Costa?</h2>
-
-      <p class="paragrafo">
-        Ravi é um adolescente de 17 anos, morador da comunidade quilombola de Capoeiras, em Macaíba-RN, com espírito
-        empreendedor e interesse em transformar seu talento artesanal em um negócio.
-      </p>
-
-      <p class="paragrafo">
-        A Raco nasceu da vontade de levar a arte e a cultura local para celebrações em todo o Brasil. O que começou como
-        um hobby transformou-se em uma missão: criar peças que não apenas decoram festas, mas que carregam consigo a
-        identidade e o afeto de quem as produz.
-      </p>
 
 
-      <p class="paragrafo">
-        Cada kit festa que sai de nossa oficina é revisado pessoalmente por Ravi, garantindo que o padrão de qualidade
-        artesanal que define a nossa marca seja mantido em cada centímetro de papel.
-      </p>
-
-      <hr>
-
-      <p class="paragrafo"><strong>Produção 100% Artesanal</strong></p>
-      <p class="subtitulo" style="color: #ffffff; opacity: 0.8; text-transform: none;">Cuidado individual em cada
-        pedido.</p>
-    </div>
-
-    <div class="caixa-foto">
-      <img src="{% static 'img/ravif.png' %}" alt="Ravi Costa">
-    </div>
-
-
-    <section class="raizes">
-     <h4>NOSSAS RAÍZES</h4>
-
-      <h2>A Comunidade de Capoeiras</h2>
-      
-      <p >Nosso trabalho é profundamente enraizado na história de Capoeiras, Macaíba-RN. Um
-        território de resistência e ancestralidade.</p>
-
-       <div class="cards">
-
-        <div class="card">
-          <div >🏺</div>
-          <h3>Ancestralidade</h3>
-          <p>Preservamos as tradições e o saber manual transmitido através das gerações em nossa comunidade quilombola.
-          </p>
-        </div> 
-       <div class="card">
-          <div >🤝</div>
-          <h3>Comunidade</h3>
-          <p>Trabalhamos para fortalecer os vínculos locais, valorizando o potencial criativo e econômico do nosso povo.
-          </p>
+    <!-- HEADER / MENU DE NAVEGAÇÃO -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="{% static 'img/raco.png' %}" alt="RACO" >
         </div>
-         <div class="card">
-           <div >🌱</div>
-          <h3>Conexão</h3>
-          <p>Nossa arte reflete a relação íntima com a natureza e o respeito aos seres ancestrais que nos rodeiam.</p>
+        <nav class="nav-links">
+            <a href="#">Nossa loja</a>
+            <a href="#">Kits festa</a>
+            <a href="#">Convites</a>
+            <a href="#">Caixas e embalagens</a>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="http://127.0.0.1:8000/raco/conta/" class="btn-account">MINHA CONTA</a>
         </div>
-      </div> 
+    </header>
 
+    <!-- SEÇÃO FUNDADOR -->
+    <section class="founder-section">
+        <div class="founder-container">
+            <div class="founder-text">
+                <span class="subtitle">NOSSO FUNDADOR</span>
+                <h1>Quem é Ravi Costa?</h1>
+                <p>Ravi é um adolescente de 17 anos, morador da comunidade quilombola de Capoeiras, em Macaíba-RN, com espírito empreendedor e interesse em transformar seu talento artesanal em um negócio.</p>
+                <p>A Raco nasceu da vontade de levar a arte e a cultura local para celebrações em todo o Brasil. O que começou como um hobby transformou-se em uma missão: criar peças que não apenas decoram festas, mas que carregam consigo a identidade e o afeto de quem as produz.</p>
+                <p>Cada kit festa que sai de nossa oficina é revisado pessoalmente por Ravi, garantindo que o padrão de qualidade artesanal que define a nossa marca seja mantido em cada centímetro de papel.</p>
+                
+                <div class="badge-craft">
+                    <span class="badge-icon">📍</span>
+                    <div>
+                        <strong>Produção 100% Artesanal</strong><br>
+                        <small>Cuidado individual em cada pedido.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="founder-image-box">
+                <!-- Substitua pelo link real da foto -->
+                <img src="{% static 'img/ravif.png' %}" alt="Ravi Costa" class="founder-img">
+            </div>
+        </div>
     </section>
 
-    <!-- RODAPÉ -->
-     
-          <h2>👤 Raco</h2>
-          <p>Na Raco Personalizados, sua compra é totalmente segura!</p>
-          <div class="social-icons">
-            <span>📷</span> <span>📘</span> <span>🎥</span>
-          </div>
+    <!-- SEÇÃO RAÍZES E COMUNIDADE -->
+    <section class="roots-section">
+        <span class="subtitle-centered">NOSSAS RAÍZES</span>
+        <h2>A Comunidade de Capoeiras</h2>
+        <p class="roots-description">Nosso trabalho é profundamente enraizado na história de Capoeiras, Macaíba-RN.<br>Um território de resistência e ancestralidade.</p>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
+                <h3>Ancestralidade</h3>
+                <p>Preservamos as tradições e o saber manual transmitido através das gerações em nossa comunidade quilombola.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+                <h3>Comunidade</h3>
+                <p>Trabalhamos para fortalecer os vínculos locais, valorizando o potencial criativo e econômico do nosso povo.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-icon"><i class="fa-solid fa-link"></i></div>
+                <h3>Conexão</h3>
+                <p>Nossa arte reflete a relação íntima com a natureza e o respeito ao meio ambiente que nos rodeia.</p>
+            </div>
         </div>
-        <div class="footer-links">
-          <a href="#">Suporte Fale</a>
-          <a href="#">Termos de Uso</a>
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Minha Conta</a>
-          <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20">Atendimento Online</a>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">👤</span> <strong>Raco</strong>
+                </div>
+                <p class="security-text">Na Raco Personalizados, sua compra é totalmente segura!</p>
+                <p class="security-desc">Para garantirmos que seus dados estejam sempre protegidos, não armazenamos nenhuma informação do cartão de crédito utilizado, seguindo os protocolos de criptografia e de segurança das principais instituições bancárias do Brasil.</p>
+                
+                <div class="social-links">
+                    <p>SIGA NOSSAS REDES SOCIAIS</p>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Sobre Nós</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="conta.html"target="_blank">Minha Conta</a>
+                <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank">Atendimento Online</a>
+            </div>
         </div>
-      </div>
-      <div class="footer">
-        <p>Comunidade Quilombola de Capoeiras, S/N - Zona Rural, Macaíba-RN | CEP: 59280-000</p>
-        <p>Copyright 2026 © racopersonalizados.com.br</p>
-      </div>
-    </footer> 
+
+        <div class="footer-bottom">
+            <p>Comunidade Quilombola de Capoeiras, S/N - Zona Rural, Macaíba - RN | CEP: 59280-000</p>
+            <p>Copyright 2026 © racopersonalizados.com.br</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+ 
+
+  <hr>
+
+  <p class="paragrafo"><strong>Produção 100% Artesanal</strong></p>
+  <p class="subtitulo" style="color: #ffffff; opacity: 0.8; text-transform: none;">Cuidado individual em cada
+    pedido.</p>
+  </div>
 
 </body>
 

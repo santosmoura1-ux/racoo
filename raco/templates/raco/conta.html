@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta - Raco</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fbf9f4;
+            /* O mesmo bege claro do fundo dos seus cards */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            background-color: #ffffff;
+            /* Caixa interna branca para destacar */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            /* Sombra bem leve */
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #2b5c6e;
+            /* O Azul-Petróleo marcante do cabeçalho da sua página */
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .subtitulo {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #2b5c6e;
+            /* Rótulos em azul-petróleo */
+            margin-bottom: 8px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        /* Foco no input adota a cor do tema */
+        .input-group input:focus {
+            border-color: #2b5c6e;
+        }
+
+        .action-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            margin-bottom: 30px;
+        }
+
+        .btn-acessar {
+            background-color: #2b5c6e;
+            /* Botão principal com o azul do tema */
+            color: #ffffff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn-acessar:hover {
+            background-color: #1e414f;
+            /* Tom mais escuro de azul ao passar o mouse */
+        }
+
+        .recuperar-senha {
+            color: #2b5c6e;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .recuperar-senha:hover {
+            text-decoration: underline;
+        }
+
+        .divisor {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #999999;
+            font-size: 12px;
+            margin-bottom: 24px;
+        }
+
+        .divisor::before,
+        .divisor::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .divisor:not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divisor:not(:empty)::after {
+            margin-left: .5em;
+        }
+
+        .btn-social {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            background-color: #ffffff;
+            font-size: 14px;
+            color: #333333;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            text-decoration: none;
+        }
+
+        .btn-social:hover {
+            background-color: #f9f9f9;
+        }
+
+        .btn-social img {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Entrar</h2>
+        <p class="subtitulo">Acesse sua conta no RACO.</p>
+
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ex.:raco@mail.com.br" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <div class="action-row">
+                <button type="submit" class="btn-acessar">Acessar</button>
+            </div>
+        </form>
+
+        <div class="divisor">ou</div>
+
+        
+        <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="btn-social">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/716/480/original/whatsapp-icon-free-png.png" alt="WhatsApp">
+            Continuar no WhatsApp
+        </a>
+
+       
+        <a href="#" class="btn-social">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/415/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="instagram">
+            Continuar no instagram
+        </a>
+    </div>
+
+</body>
+
+</html>

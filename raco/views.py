@@ -19,6 +19,9 @@ def convite(request):
 def lembranca(request):
      return render (request,'raco/lembranca.html')
 
+def conta(request):
+     return render (request,'raco/conta.html')
+
 def index(request):
 
     itens = [

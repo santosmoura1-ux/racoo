@@ -8,5 +8,5 @@ urlpatterns = [
     path("kit/", views.kit, name ="kit"),
     path("convite/", views.convite, name ="convite"),
     path("lembranca/", views.lembranca, name ="lembranca"),
-
-]
+     path('conta/', views.conta, name='conta'),
+     ]
