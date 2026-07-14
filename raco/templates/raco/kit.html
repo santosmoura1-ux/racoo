@@ -98,6 +98,15 @@
       font-size: 13px;
     }
 
+    .botao-comprar {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-comprar:hover {
+    background-color: #2396a8;
+    transform: scale(1.03);
+}
+
    /* HEADER */
   header {
     width: 100%;
@@ -211,6 +220,13 @@
     </div>
   </div>
 </div>
+<script>
+document.querySelectorAll(".botao-comprar").forEach(botao => {
+    botao.addEventListener("click", function () {
+        alert("Você clicou em Comprar!");
+    });
+});
+</script>
 </body>
 
 </html>
