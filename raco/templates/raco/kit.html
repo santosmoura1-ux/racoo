@@ -189,6 +189,28 @@
     .botao-espiar:hover {
       background-color: #333
     }
+
+    .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .btn-account {
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .btn-account:hover {
+    background-color: #333;
+    color: #fff;
+  }
   </style>
 
 </head>
@@ -196,24 +218,21 @@
 <header>
 
 
-  <header class="main-header">
+ <header class="main-header">
     <div class="logo">
       <img src="{% static 'img/raco.png' %}" alt="RACO">
     </div>
     <nav class="nav-links">
       <a href="http://127.0.0.1:8000/raco/index/">Página Inicial</a>
-      <a href="http://127.0.0.1:8000/raco/kit/#">Kits festa</a>
+      <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
       <a href="#">Convites</a>
       <a href="#">Caixas e embalagens</a>
       <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
     </nav>
-    <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
-      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
-        style="width: 16px; height: 16px; vertical-align: middle;">
-      MINHA CONTA
-    </button>
+    <div class="header-actions">
+      <a href="http://127.0.0.1:8000/raco/conta/" class="btn-account">MINHA CONTA</a>
+    </div>
   </header>
-
 
 
 </header>
