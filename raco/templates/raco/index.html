@@ -53,7 +53,7 @@
   }
 
   nav a:hover {
-    color: #eeeeee;
+    color: #333;
   }
 
   nav img {
@@ -93,18 +93,23 @@
   }
 
   .hero-content {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
     position: relative;
     z-index: 2;
     text-align: center;
     color: #ffffff;
-    /* Letra branca */
-    width: 80%;
+    width:100%;
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
       0px 0px 4px rgba(0, 0, 0, 0.5);
+
+    
   }
 
   .hero-content h1 {
+     margin: 0 0 20px 0;
     font-size: 60px;
     font-weight: 300;
     margin-bottom: 40px;
@@ -112,33 +117,38 @@
 
 
   .search-box {
-
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
     display: flex;
-    background-size: cover;
-    background-position: center;
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 3px solid rgba(255, 255, 255, 0.6);
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 6px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    margin: 24px auto 0 auto;
+    width: 100%;
+
   }
 
 
   .search-box input {
-    flex: 1;
-    padding: 22px;
+   flex: 1;
     border: none;
-    outline: none;
-    font-size: 18px;
-  }
-
+    background: transparent;
+    padding: 12px 20px; 
+    font-size: 15px;
+    outline: none;      
+    color: #333333;
+}
   .search-box button {
-    width: 90px;
-    color: black;
-    font-size: 24px;
+    background-color: #333; 
+    color: #ffffff;
+    border: none;
+    padding: 0 28px;
+    border-radius: 24px; 
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; 
     cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
   }
 
   /* barra de pesquisa */
@@ -209,75 +219,91 @@
     font-weight: bold;
     color: #000000;
   }
-/* Container principal do banner */
-.banner-container {
-  width: 100%;
-  max-width: 1536px; 
-  height: 452px;    
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: Arial, sans-serif; /* Altere para a fonte do seu projeto */
-  
-  /* Substitua 'sua-imagem.jpg' pelo caminho real da imagem de fundo */
-  background: linear-gradient(rgba(100, 200, 215, 0.85), rgba(100, 200, 215, 0.85)), url('sua-imagem.jpg');
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  padding: 20px;
-}
 
-/* Caixa interna que centraliza os textos */
-.banner-content {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
+  /* Container principal do banner */
+  .banner-container {
+    width: 100%;
+    max-width: none;
+    height: 452px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(100, 200, 215, 0.85), rgba(100, 200, 215, 0.85));
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 
-/* Título principal */
-.banner-title {
-  color: #2b1d0c; /* Tom marrom escuro do texto */
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin: 0;
-}
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
-/* Subtítulo / Texto de apoio */
-.banner-text {
-  color: #2b1d0c;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 0;
-}
+  /* Caixa interna que centraliza os textos */
+  .banner-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
-/* Botão de whatsap */
-.banner-button {
-  display: inline-block;
-  background-color: #3d2305;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 14px 40px;
-  border-radius: 6px;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
+  /* Título principal */
+  .banner-title {
+    color: #2b1d0c;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
 
 
-.banner-button:hover {
-  background-color: #251503;
-}
+  .banner-text {
+    color: #2b1d0c;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Botão de whatsap */
+  .banner-button {
+    width: 100%;
+    display: inline-block;
+    background-color: #3d2305;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 14px 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .banner-button:hover {
+    background-color: #333;
+  }
+
+  .btn-account {
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
 
 
 
-
-  /* RODAPÉ */
   .main-footer {
     background-color: #ffffff;
     padding: 60px 50px 30px 50px;
@@ -345,7 +371,12 @@
   }
 
   .footer-links a:hover {
-    color: #000;
+    color: #333;
+  }
+
+  .btn-account:hover {
+    background-color: #333;
+    color: #fff;
   }
 
   .footer-bottom {
@@ -381,36 +412,34 @@
         <img src="{% static 'img/raco.png' %}" alt="RACO">
       </div>
       <nav class="nav-links">
-        <a href="#">Nossa loja</a>
+        <a href="http://127.0.0.1:8000/raco/index/">Página Inicial</a>
         <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
         <a href="#">Convites</a>
         <a href="#">Caixas e embalagens</a>
         <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
       </nav>
 
+      <div class="header-actions">
 
-      <button class="btnw">
-
-        <a href="http://127.0.0.1:8000/raco/conta/">MINHA CONTA</a>
-
-      </button>
+        <a href="http://127.0.0.1:8000/raco/conta/" class="btn-account">MINHA CONTA</a>
+      </div>
 
     </header>
 
     <!-- HERO -->
     <section class="hero">
 
-      <div class="overlay"></div>
+      <div class="overlay">
 
-      <div class="hero-content">
+        <div class="hero-content">
 
-        <h1>Onde cada detalhe conta a sua história</h1>
+          <h1>Onde cada detalhe conta a sua história</h1>
 
-        <div class="search-box">
-          <input type="text" placeholder="Qual produto deseja personalizar?">
-          <button>buscar</button>
+          <div class="search-box">
+            <input type="text" placeholder="Qual produto deseja personalizar?">
+            <button>buscar</button>
+          </div>
         </div>
-
       </div>
 
     </section>
@@ -467,7 +496,8 @@
         <h1 class="banner-title">Atendimento personalizado</h1>
         <p class="banner-text">Fale com nossa equipe no WhatsApp e receba um orçamento personalizado, sem compromisso.
         </p>
-        <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="banner-button">FALAR NO WHATSAPP</a>
+        <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="banner-button">FALAR NO
+          WHATSAPP</a>
       </div>
     </div>
 

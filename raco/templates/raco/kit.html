@@ -30,133 +30,165 @@
       color: #4A3728;
       font-family: sans-serif;
       font-size: 22px;
+      text-align: center;
       margin: 30px 20px 10px 20px;
     }
 
-    /* cartões de lado um do outro*/
+
     .grade-produtos {
       display: flex;
+      gap: 20px;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
-      /* Diminuír o espaço entre os cartões */
-      justify-content: flex-start;
-      /* Alinhar os cartões  */
       padding: 20px;
-      ;
     }
 
     /* O quadrado do cartão */
     .produto-card {
-      background: white;
+      background-color: #ffffff;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-      /* Sombra*/
-      width: 240px;
-      /* Largura do cartao*/
-      border: 1px solid #eee;
-      font-family: sans-serif;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      width: 250px;
+      display: flex;
+      flex-direction: column;
     }
 
     /* foto do produto */
     .produto-card img {
       width: 100%;
-      height: 160px;
+      height: 180px;
       object-fit: cover;
-      /* Corta a imagem sem deixar ela toda errada */
     }
 
-    /* Textos dentro do cartão */
     .produto-info {
-      padding: 15px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-grow: 1;
     }
 
     .produto-info h3 {
       font-size: 14px;
-      color: #333;
-      margin: 0 0 10px 0;
-      line-height: 1.4;
+      color: #333333;
+      margin: 0;
+      font-weight: 600;
     }
 
-    /* Preço  */
+
+
     .preco {
-      color: #6b8e23;
+      font-size: 18px;
+      color: #00a878;
       font-weight: bold;
-      font-size: 20px;
-      margin: 5px 0 15px 0;
+      margin: 0;
     }
 
 
     .botao-comprar {
-      background-color: #2bb9cc;
+      flex: 2;
+      background-color: #2cb3cb;
       color: white;
       border: none;
       padding: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      width: 100%;
+      border-radius: 8px;
       font-weight: bold;
-      font-size: 13px;
+      cursor: pointer;
+      font-size: 12px;
     }
 
-    .botao-comprar {
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.botao-comprar:hover {
-    background-color: #2396a8;
-    transform: scale(1.03);
-}
 
-   /* HEADER */
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-  }
 
-  .menu {
-    display: flex;
-    gap: 20px;
-  }
+    .botao-comprar:hover {
 
-  .logo {
-    height: 50px;
-    width: auto;
-  }
+      background-color: #333;
 
-  nav {
-    display: flex;
-    gap: 40px;
-  }
+    }
 
-  nav a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    transition: 0.3s;
-  }
 
-  nav a:hover {
-    color: #8e44ad;
-  }
+    /* HEADER */
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+    }
 
-  nav img {
-    height: 50px;
-  }
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
 
-  .button {
-    padding: 12px 24px;
-    background: #fff;
-    border: none;
-    outline: none;
-    box-shadow: none;
-  }
+    .logo {
+      height: 50px;
+      width: auto;
+    }
+
+    nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    nav a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      background: #fff;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .botoes-container {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      margin-top: auto;
+    }
+
+
+
+
+    /* Estilo do botão Espiar (estilo outline/vazado) */
+    .botao-espiar {
+      flex: 1;
+      background-color: #2cb3cb;
+      color: white;
+      border: 2px solid #2cb3cb;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+
+    .botao-espiar:hover {
+      background-color: #333
+    }
   </style>
 
 </head>
@@ -164,68 +196,91 @@
 <header>
 
 
-
-  <nav>
-    <nav class="menu">
-      <img src="{% static 'img/raco.png' %}" alt="Logo" class="logo">
-      <a href="#">Nossa loja</a>
-      <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
+  <header class="main-header">
+    <div class="logo">
+      <img src="{% static 'img/raco.png' %}" alt="RACO">
+    </div>
+    <nav class="nav-links">
+      <a href="http://127.0.0.1:8000/raco/index/">Página Inicial</a>
+      <a href="http://127.0.0.1:8000/raco/kit/#">Kits festa</a>
       <a href="#">Convites</a>
       <a href="#">Caixas e embalagens</a>
       <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
     </nav>
-
     <button class="btn" style="display: inline-flex; align-items: center; gap: 6px;">
       <img src="https://img.icons8.com/material-outlined/24/000000/shopping-bag.png" alt="Sacola"
         style="width: 16px; height: 16px; vertical-align: middle;">
       MINHA CONTA
     </button>
+  </header>
+
+
 
 </header>
 
 <h2 class="titulo-secao">Kits festa infantil personalizados: Os Temas mais procurados</h2>
 
+
 <div class="grade-produtos">
+
 
   <div class="produto-card">
     <img src="{% static 'img/abe.png' %}">
     <div class="produto-info">
       <h3>Decoração de festa tema Abelhas e Mel</h3>
       <p class="preco">R$ 140,00</p>
-      <button class="botao-comprar">COMPRAR</button>
+      <div class="botoes-container">
+        <button class="botao-comprar">COMPRAR</button>
+        <button class="botao-espiar">ESPIAR</button>
+      </div>
     </div>
   </div>
+
   <div class="produto-card">
     <img src="{% static 'img/dino.png' %}">
     <div class="produto-info">
       <h3>Decoração de festa tema Dinossauros</h3>
       <p class="preco">R$ 140,00</p>
-      <button class="botao-comprar">COMPRAR</button>
+      <div class="botoes-container">
+        <button class="botao-comprar">COMPRAR</button>
+        <button class="botao-espiar">ESPIAR</button>
+      </div>
     </div>
   </div>
+
+
   <div class="produto-card">
     <img src="{% static 'img/bos.png' %}">
     <div class="produto-info">
       <h3>Decoração de festa tema Bosque Encantado</h3>
       <p class="preco">R$ 140,00</p>
-      <button class="botao-comprar">COMPRAR</button>
+      <div class="botoes-container">
+        <button class="botao-comprar">COMPRAR</button>
+        <button class="botao-espiar">ESPIAR</button>
+      </div>
     </div>
   </div>
+
   <div class="produto-card">
     <img src="{% static 'img/flo.png' %}">
     <div class="produto-info">
       <h3>Decoração de festa tema Flores</h3>
       <p class="preco">R$ 140,00</p>
-      <button class="botao-comprar">COMPRAR</button>
+      <div class="botoes-container">
+        <button class="botao-comprar">COMPRAR</button>
+        <button class="botao-espiar">ESPIAR</button>
+      </div>
     </div>
   </div>
+
 </div>
+
 <script>
-document.querySelectorAll(".botao-comprar").forEach(botao => {
+  document.querySelectorAll(".botao-comprar").forEach(botao => {
     botao.addEventListener("click", function () {
-        alert("Você clicou em Comprar!");
+      alert("Você clicou em Comprar!");
     });
-});
+  });
 </script>
 </body>
 
