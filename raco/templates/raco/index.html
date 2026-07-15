@@ -25,7 +25,7 @@
     padding: 20px 50px;
     background-color: #fff;
     border-bottom: 1px solid #eeeeee;
-}
+  }
 
   .menu {
     display: flex;
@@ -47,13 +47,13 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: rgb(173, 36, 36);
     font-size: 18px;
     transition: 0.3s;
   }
 
   nav a:hover {
-    color: #8e44ad;
+    color: #eeeeee;
   }
 
   nav img {
@@ -144,7 +144,7 @@
   /* barra de pesquisa */
   .info-bar {
     width: 100%;
-    background: #9b14df;
+    background: #f8f8f8;
     color: white;
     display: flex;
     justify-content: center;
@@ -154,60 +154,209 @@
   }
 
   /* nossas categorias*/
-  .categories {
-    padding: 80px 10%;
-  }
 
-  .categories h2 {
-    font-size: 42px;
-    margin-bottom: 40px;
-    color: #333;
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-  }
-
-  .card {
-    background: #f5f5f5;
-    border-radius: 18px;
-    overflow: hidden;
-    transition: 0.3s;
-  }
-
-
-  .card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-  }
-
-  .card h3 {
-    padding: 20px;
-    text-align: center;
-    color: #333;
-  }
-
-  .at {
-    background-color: #2bb9cc;
+  .categorias-section {
     padding: 40px 20px;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
   }
 
-  .btnw {
+  .categorias-section h2 {
+    color: #3b2306;
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
 
-    display: inline-block;
-    background-color: #3b2306;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 12px 35px;
-    border-radius: 30px;
+
+  .categorias-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+  .categoria-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+  }
+
+
+  .imagem-circular {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+
+  .imagem-circular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .categoria-item p {
+    margin: 0;
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 1px;
+    color: #000000;
+  }
+/* Container principal do banner */
+.banner-container {
+  width: 100%;
+  max-width: 1536px; 
+  height: 452px;    
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Altere para a fonte do seu projeto */
+  
+  /* Substitua 'sua-imagem.jpg' pelo caminho real da imagem de fundo */
+  background: linear-gradient(rgba(100, 200, 215, 0.85), rgba(100, 200, 215, 0.85)), url('sua-imagem.jpg');
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Caixa interna que centraliza os textos */
+.banner-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Título principal */
+.banner-title {
+  color: #2b1d0c; /* Tom marrom escuro do texto */
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Subtítulo / Texto de apoio */
+.banner-text {
+  color: #2b1d0c;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Botão de whatsap */
+.banner-button {
+  display: inline-block;
+  background-color: #3d2305;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 14px 40px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+.banner-button:hover {
+  background-color: #251503;
+}
+
+
+
+
+  /* RODAPÉ */
+  .main-footer {
+    background-color: #ffffff;
+    padding: 60px 50px 30px 50px;
+    border-top: 1px solid #eeeeee;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    flex: 2;
+    max-width: 600px;
+  }
+
+  .security-text {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .security-desc {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+  }
+
+  .social-links a {
+    color: #333;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+
+  .footer-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    min-width: 200px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    color: #000;
+  }
+
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    line-height: 1.8;
   }
 </style>
 
@@ -227,68 +376,143 @@
   <header>
 
 
- <header class="main-header">
-        <div class="logo">
-            <img src="{% static 'img/raco.png' %}" alt="RACO" >
-        </div>
-        <nav class="nav-links">
-            <a href="#">Nossa loja</a>
-            <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
-            <a href="#">Convites</a>
-            <a href="#">Caixas e embalagens</a>
-            <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
-        </nav>
-       
+    <header class="main-header">
+      <div class="logo">
+        <img src="{% static 'img/raco.png' %}" alt="RACO">
+      </div>
+      <nav class="nav-links">
+        <a href="#">Nossa loja</a>
+        <a href="http://127.0.0.1:8000/raco/kit/">Kits festa</a>
+        <a href="#">Convites</a>
+        <a href="#">Caixas e embalagens</a>
+        <a href="http://127.0.0.1:8000/raco/sobre/">Sobre Nós</a>
+      </nav>
 
-      <button class="btnw" style="display: inline-flex; align-items: center; gap: 6px;">
-        MINHA CONTA
+
+      <button class="btnw">
+
+        <a href="http://127.0.0.1:8000/raco/conta/">MINHA CONTA</a>
+
       </button>
 
-  </header>
+    </header>
 
-  <!-- HERO -->
-  <section class="hero">
+    <!-- HERO -->
+    <section class="hero">
 
-    <div class="overlay"></div>
+      <div class="overlay"></div>
 
-    <div class="hero-content">
+      <div class="hero-content">
 
-      <h1>Onde cada detalhe conta a sua história</h1>
+        <h1>Onde cada detalhe conta a sua história</h1>
 
-      <div class="search-box">
-        <input type="text" placeholder="Qual produto deseja personalizar?">
-        <button>buscar</button>
-      </div>
-
-    </div>
-
-  </section>
-  <!-- CATEGORIES -->
-
-  <section class="categories">
-    <h2>Nossas categorias</h2>
-
-    <div class="cards">
-      {% for item in itens %}
-      <div class="card">
-
-        <img src="{% static item.imagem %}">
-        <p>{{ item.descricao }}</p>
+        <div class="search-box">
+          <input type="text" placeholder="Qual produto deseja personalizar?">
+          <button>buscar</button>
+        </div>
 
       </div>
 
+    </section>
+    <!-- CATEGORIES -->
 
-      {% endfor %}
-    </div>
-    <div class="at">
-      <h3>Atendimento personalizado</h3>
-      <p>Fale com nossa equipe no WhatsApp e receba um orçamento personalizado, sem compromisso.</p>
-      <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="btnw">
-        FALAR NO WHATSAPP
-      </a>
+    <section class="categorias-section">
+      <h2>Nossas categorias</h2>
+
+      <div class="categorias-container">
+        <!-- Categoria 1 -->
+        <div class="categoria-item">
+          <div class="imagem-circular">
+            <img src="{% static 'img/urs.png' %}" alt="Embalagens">
+          </div>
+          <p>Embalagens</p>
+        </div>
+
+        <!-- Categoria 2 -->
+        <div class="categoria-item">
+          <div class="imagem-circular">
+            <img src="{% static 'img/convite.png' %}" alt="Convites">
+          </div>
+          <p>Convites</p>
+        </div>
+
+        <!-- Categoria 3 -->
+        <div class="categoria-item">
+          <div class="imagem-circular">
+            <img src="{% static 'img/caixa.png' %}" alt="Caixa milk">
+          </div>
+          <p>Caixa milk</p>
+        </div>
+
+        <!-- Categoria 4 -->
+        <div class="categoria-item">
+          <div class="imagem-circular">
+            <img src="{% static 'img/pira.png' %}" alt="Caixa pirâmide">
+          </div>
+          <p>Caixa pirâmide</p>
+        </div>
+
+        <!-- Categoria 5 -->
+        <div class="categoria-item">
+          <div class="imagem-circular">
+            <img src="{% static 'img/tub.png' %}" alt="tubetes">
+          </div>
+          <p>Tubetes</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="banner-container">
+      <div class="banner-content">
+        <h1 class="banner-title">Atendimento personalizado</h1>
+        <p class="banner-text">Fale com nossa equipe no WhatsApp e receba um orçamento personalizado, sem compromisso.
+        </p>
+        <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank" class="banner-button">FALAR NO WHATSAPP</a>
+      </div>
     </div>
 
-  </section>
+    <p class="security-text">Na Raco Personalizados, sua compra é totalmente segura!</p>
+    <p class="security-desc">Para garantirmos que seus dados estejam sempre protegidos, não armazenamos
+      nenhuma informação do cartão de crédito utilizado, seguindo os protocolos de criptografia e de
+      segurança das principais instituições bancárias do Brasil.</p>
+
+
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">👤</span> <strong>Raco</strong>
+          </div>
+          <p class="security-text">Na Raco Personalizados, sua compra é totalmente segura!</p>
+          <p class="security-desc">Para garantirmos que seus dados estejam sempre protegidos, não armazenamos
+            nenhuma informação do cartão de crédito utilizado, seguindo os protocolos de criptografia e de
+            segurança das principais instituições bancárias do Brasil.</p>
+
+
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Sobre Nós</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="conta" target="_blank">Minha Conta</a>
+          <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank">Atendimento Online</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Comunidade Quilombola de Capoeiras, S/N - Zona Rural, Macaíba - RN | CEP: 59280-000</p>
+        <p>Copyright 2026 © racopersonalizados.com.br</p>
+      </div>
+    </footer>
+
+</body>
+
+</body>
+
+</section>
 
 </body>
 

@@ -4,338 +4,344 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre nós</title>
-  <style>
-    /* HEADER  primeira parte de cima do site*/
-   /* CONFIGURAÇÕES GERAIS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <style>
+        /* HEADER  primeira parte de cima do site*/
+        /* CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-body {
-    background-color: #ffffff;
-    color: #333333;
-}
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
 
-/* HEADER */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #fff;
-    border-bottom: 1px solid #eeeeee;
-}
+        /* HEADER */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #eeeeee;
+        }
 
-.logo {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+        .logo {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.nav-links a {
-    text-decoration: none;
-    color: #555;
-    margin: 0 15px;
-    font-size: 14px;
-    font-weight: 500;
-}
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
 
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
-.cart-icon {
-    color: #333;
-    font-size: 18px;
-}
+        .cart-icon {
+            color: #333;
+            font-size: 18px;
+        }
 
-.btn-account {
-    text-decoration: none;
-    border: 1px solid #333;
-    padding: 8px 16px;
-    color: #333;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: 0.3s;
-}
+        .btn-account {
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            color: #333;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
 
-.btn-account:hover {
-    background-color: #333;
-    color: #fff;
-}
+        .btn-account:hover {
+            background-color: #333;
+            color: #fff;
+        }
 
-/* SEÇÃO FUNDADOR */
-.founder-section {
-    background: linear-gradient(to right, #6d4c7d 60%, #57aeba 60%);
-    color: #fff;
-    padding: 80px 50px;
-}
+        /* SEÇÃO FUNDADOR */
+        .founder-section {
+            background: linear-gradient(to right, #6d4c7d 60%, #57aeba 60%);
+            color: #fff;
+            padding: 80px 50px;
+        }
 
-.founder-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
+        .founder-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
 
-.founder-text {
-    flex: 1;
-}
+        .founder-text {
+            flex: 1;
+        }
 
-.founder-text .subtitle {
-    font-size: 12px;
-    letter-spacing: 2px;
-    opacity: 0.8;
-    display: block;
-    margin-bottom: 10px;
-}
+        .founder-text .subtitle {
+            font-size: 12px;
+            letter-spacing: 2px;
+            opacity: 0.8;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-.founder-text h1 {
-    font-size: 36px;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
+        .founder-text h1 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
 
-.founder-text p {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
+        .founder-text p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
 
-.badge-craft {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 12px 20px;
-    border-radius: 30px;
-    width: fit-content;
-    margin-top: 30px;
-}
+        .badge-craft {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 12px 20px;
+            border-radius: 30px;
+            width: fit-content;
+            margin-top: 30px;
+        }
 
-.badge-icon {
-    font-size: 20px;
-}
+        .badge-icon {
+            font-size: 20px;
+        }
 
-.founder-image-box {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
+        .founder-image-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
 
-.founder-img {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 40px;
-    border: 5px solid rgba(255, 255, 255, 0.2);
-}
+        .founder-img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 40px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+        }
 
-/* SEÇÃO RAÍZES */
-.roots-section {
-    padding: 80px 50px;
-    text-align: center;
-    background-color: #fff;
-}
+        /* SEÇÃO RAÍZES */
+        .roots-section {
+            padding: 80px 50px;
+            text-align: center;
+            background-color: #fff;
+        }
 
-.subtitle-centered {
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #888;
-    display: block;
-    margin-bottom: 10px;
-}
+        .subtitle-centered {
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #888;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-.roots-section h2 {
-    font-size: 28px;
-    color: #222;
-    margin-bottom: 15px;
-}
+        .roots-section h2 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 15px;
+        }
 
-.roots-description {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 50px;
-}
+        .roots-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 50px;
+        }
 
-.cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
 
-.card {
-    background-color: #fbf6ee;
-    padding: 40px 30px;
-    border-radius: 12px;
-    width: 300px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-}
+        .card {
+            background-color: #fbf6ee;
+            padding: 40px 30px;
+            border-radius: 12px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
 
-.card-icon {
-    background-color: #57aeba;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
+        .card-icon {
+            background-color: #57aeba;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
 
-.card h3 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 15px;
-}
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.card p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-}
+        .card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
 
-/* RODAPÉ */
-.main-footer {
-    background-color: #ffffff;
-    padding: 60px 50px 30px 50px;
-    border-top: 1px solid #eeeeee;
-}
+        /* RODAPÉ */
+        .main-footer {
+            background-color: #ffffff;
+            padding: 60px 50px 30px 50px;
+            border-top: 1px solid #eeeeee;
+        }
 
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    gap: 50px;
-    flex-wrap: wrap;
-}
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
 
-.footer-brand {
-    flex: 2;
-    max-width: 600px;
-}
+        .footer-brand {
+            flex: 2;
+            max-width: 600px;
+        }
 
-.security-text {
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 14px;
-}
+        .security-text {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 14px;
+        }
 
-.security-desc {
-    font-size: 12px;
-    color: #777;
-    line-height: 1.6;
-    margin-top: 10px;
-}
+        .security-desc {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
 
-.social-links {
-    margin-top: 30px;
-}
+        .social-links {
+            margin-top: 30px;
+        }
 
-.social-links p {
-    font-size: 12px;
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 10px;
-}
+        .social-links p {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
 
-.social-links a {
-    color: #333;
-    font-size: 18px;
-    margin-right: 15px;
-    text-decoration: none;
-}
+        .social-links a {
+            color: #333;
+            font-size: 18px;
+            margin-right: 15px;
+            text-decoration: none;
+        }
 
-.footer-links {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-end;
-    min-width: 200px;
-}
+        .footer-links {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-end;
+            min-width: 200px;
+        }
 
-.footer-links a {
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-}
+        .footer-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
 
-.footer-links a:hover {
-    color: #000;
-}
+        .footer-links a:hover {
+            color: #000;
+        }
 
-.footer-bottom {
-    max-width: 1100px;
-    margin: 40px auto 0 auto;
-    border-top: 1px solid #eeeeee;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 11px;
-    color: #999;
-    line-height: 1.8;
-}
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 40px auto 0 auto;
+            border-top: 1px solid #eeeeee;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 11px;
+            color: #999;
+            line-height: 1.8;
+        }
 
-/* RESPONSIVIDADE PARA CELULARES */
-@media (max-width: 768px) {
-    .main-header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-    .founder-section {
-        background: #6d4c7d;
-        padding: 40px 20px;
-    }
-    .founder-container {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .badge-craft {
-        margin: 30px auto 0 auto;
-    }
-    .roots-section {
-        padding: 40px 20px;
-    }
-    .footer-top {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .footer-links {
-        align-items: flex-start;
-    }
-}
+        /* RESPONSIVIDADE PARA CELULARES */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
 
-  </style>
+            .nav-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
 
-  </style>
+            .founder-section {
+                background: #6d4c7d;
+                padding: 40px 20px;
+            }
+
+            .founder-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .badge-craft {
+                margin: 30px auto 0 auto;
+            }
+
+            .roots-section {
+                padding: 40px 20px;
+            }
+
+            .footer-top {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .footer-links {
+                align-items: flex-start;
+            }
+        }
+    </style>
+
+    </style>
 </head>
 
 <body>
@@ -345,7 +351,7 @@ body {
     <!-- HEADER / MENU DE NAVEGAÇÃO -->
     <header class="main-header">
         <div class="logo">
-            <img src="{% static 'img/raco.png' %}" alt="RACO" >
+            <img src="{% static 'img/raco.png' %}" alt="RACO">
         </div>
         <nav class="nav-links">
             <a href="#">Nossa loja</a>
@@ -366,10 +372,14 @@ body {
             <div class="founder-text">
                 <span class="subtitle">NOSSO FUNDADOR</span>
                 <h1>Quem é Ravi Costa?</h1>
-                <p>Ravi é um adolescente de 17 anos, morador da comunidade quilombola de Capoeiras, em Macaíba-RN, com espírito empreendedor e interesse em transformar seu talento artesanal em um negócio.</p>
-                <p>A Raco nasceu da vontade de levar a arte e a cultura local para celebrações em todo o Brasil. O que começou como um hobby transformou-se em uma missão: criar peças que não apenas decoram festas, mas que carregam consigo a identidade e o afeto de quem as produz.</p>
-                <p>Cada kit festa que sai de nossa oficina é revisado pessoalmente por Ravi, garantindo que o padrão de qualidade artesanal que define a nossa marca seja mantido em cada centímetro de papel.</p>
-                
+                <p>Ravi é um adolescente de 17 anos, morador da comunidade quilombola de Capoeiras, em Macaíba-RN, com
+                    espírito empreendedor e interesse em transformar seu talento artesanal em um negócio.</p>
+                <p>A Raco nasceu da vontade de levar a arte e a cultura local para celebrações em todo o Brasil. O que
+                    começou como um hobby transformou-se em uma missão: criar peças que não apenas decoram festas, mas
+                    que carregam consigo a identidade e o afeto de quem as produz.</p>
+                <p>Cada kit festa que sai de nossa oficina é revisado pessoalmente por Ravi, garantindo que o padrão de
+                    qualidade artesanal que define a nossa marca seja mantido em cada centímetro de papel.</p>
+
                 <div class="badge-craft">
                     <span class="badge-icon">📍</span>
                     <div>
@@ -389,20 +399,23 @@ body {
     <section class="roots-section">
         <span class="subtitle-centered">NOSSAS RAÍZES</span>
         <h2>A Comunidade de Capoeiras</h2>
-        <p class="roots-description">Nosso trabalho é profundamente enraizado na história de Capoeiras, Macaíba-RN.<br>Um território de resistência e ancestralidade.</p>
+        <p class="roots-description">Nosso trabalho é profundamente enraizado na história de Capoeiras,
+            Macaíba-RN.<br>Um território de resistência e ancestralidade.</p>
 
         <div class="cards-container">
             <!-- Card 1 -->
             <div class="card">
                 <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
                 <h3>Ancestralidade</h3>
-                <p>Preservamos as tradições e o saber manual transmitido através das gerações em nossa comunidade quilombola.</p>
+                <p>Preservamos as tradições e o saber manual transmitido através das gerações em nossa comunidade
+                    quilombola.</p>
             </div>
             <!-- Card 2 -->
             <div class="card">
                 <div class="card-icon"><i class="fa-solid fa-users"></i></div>
                 <h3>Comunidade</h3>
-                <p>Trabalhamos para fortalecer os vínculos locais, valorizando o potencial criativo e econômico do nosso povo.</p>
+                <p>Trabalhamos para fortalecer os vínculos locais, valorizando o potencial criativo e econômico do nosso
+                    povo.</p>
             </div>
             <!-- Card 3 -->
             <div class="card">
@@ -421,21 +434,18 @@ body {
                     <span class="logo-icon">👤</span> <strong>Raco</strong>
                 </div>
                 <p class="security-text">Na Raco Personalizados, sua compra é totalmente segura!</p>
-                <p class="security-desc">Para garantirmos que seus dados estejam sempre protegidos, não armazenamos nenhuma informação do cartão de crédito utilizado, seguindo os protocolos de criptografia e de segurança das principais instituições bancárias do Brasil.</p>
-                
-                <div class="social-links">
-                    <p>SIGA NOSSAS REDES SOCIAIS</p>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                <p class="security-desc">Para garantirmos que seus dados estejam sempre protegidos, não armazenamos
+                    nenhuma informação do cartão de crédito utilizado, seguindo os protocolos de criptografia e de
+                    segurança das principais instituições bancárias do Brasil.</p>
+
+
             </div>
 
             <div class="footer-links">
                 <a href="#">Sobre Nós</a>
                 <a href="#">Termos de Uso</a>
                 <a href="#">Política de Privacidade</a>
-                <a href="conta.html"target="_blank">Minha Conta</a>
+                <a href="conta" target="_blank">Minha Conta</a>
                 <a href="https://wa.me/5584999414251?text=OIII,%20TESTE!!%20" target="_blank">Atendimento Online</a>
             </div>
         </div>
@@ -447,15 +457,16 @@ body {
     </footer>
 
 </body>
+
 </html>
- 
 
-  <hr>
 
-  <p class="paragrafo"><strong>Produção 100% Artesanal</strong></p>
-  <p class="subtitulo" style="color: #ffffff; opacity: 0.8; text-transform: none;">Cuidado individual em cada
+<hr>
+
+<p class="paragrafo"><strong>Produção 100% Artesanal</strong></p>
+<p class="subtitulo" style="color: #ffffff; opacity: 0.8; text-transform: none;">Cuidado individual em cada
     pedido.</p>
-  </div>
+</div>
 
 </body>
 
