@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=C:\Users\alunoctg\OneDrive - IFRN\2\racoo\venv"
+set "VIRTUAL_ENV=C:\Users\20261016270059\pin\racoo\venv"
 
 if not defined PROMPT set PROMPT=$P$G
 
