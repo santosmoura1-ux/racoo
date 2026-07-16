@@ -82,7 +82,7 @@
   .overlay {
     position: absolute;
     inset: 0;
-    background-image: url("{% static 'img/fundo.png' %}");
+    background-image: url ("{% static 'img/urs.png' %}");
     background-size: cover;
     background-position: center;
 
